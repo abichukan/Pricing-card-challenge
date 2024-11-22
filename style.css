@@ -13,14 +13,13 @@ html, body{
 
 /*main-container*/
 
-.main-cointainer{
+.main-container{
 	width: 800px;
 	height: 460px;
-	background-color:black;
   margin: 0 auto;
 	padding: 0;
   box-sizing: border-box;
-	box-shadow: 2px 3px 7px rgba(0, 0, 0, 0, 0.35);
+	box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.35);
 	border-radius:8px;
 	overflow: hidden;
 }
@@ -66,6 +65,7 @@ h2 {
 	height:57%;
 	margin: 0;
 	display: flex;
+	box-sizing: border-box;
 }
 
 .sub-container1, .sub-container2 {
@@ -75,6 +75,7 @@ h2 {
 	vertical-align: top;  
   margin: 0; 
   padding: 30px;
+	box-sizing: border-box;
 }
 
 .sub-container1{
@@ -156,4 +157,23 @@ button:hover {
 .pointers p {
     margin: 8px 0px 0px 0px;  
     padding: 0;  
+}
+
+@media (max-width:800px){
+	.sub-container1, .sub-container2{
+			width: 100%; 
+			height: auto;
+			padding:20px
+	}
+	.main-container{
+		width:100%;
+		height:auto;
+  	}
+	.second-container{
+		flex-direction:column;
+		width:100%;
+	}
+	html, body{
+		margin:10px;
+	}
 }
